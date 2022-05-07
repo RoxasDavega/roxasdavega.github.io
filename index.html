@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Rio Bintang Adi Putra</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <script src="javascript/myScript.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="flex-container-justify-nav">
+                    <span>
+                        <a class="btn-navbar" id="nametitle"href="">Rio Bintang Adi Putra</a>
+                    </span>
+                    <ul>
+                        <li>
+                            <a class="btn-navbar" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="btn-navbar" href="#aboutme">About Me</a>
+                        </li>
+                        <li>
+                            <a class="btn-navbar" href="#myhobbies">Hobby</a>
+                        </li>
+                        <li>
+                            <a class="btn-navbar" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>  
+            </nav>
+        </header>
+        
+        <main>
+            <!--Home-->
+            <article id="home"> 
+                <div class="bg-top"> 
+                    <div class="bg-inside">
+                        <div class="slideshow-container">
+                            <div class="mySlides fade photo-profile" style="display: block;">
+                                <img class="bg-profile" src="image/profile 1.jpg" alt="Rio Bintang" style="width:100%"> 
+                            </div>
+                            <div class="mySlides fade photo-profile">
+                                <img class="bg-profile" src="image/profile 2.jpg" alt="Rio Bintang" style="width:100%"> 
+                            </div>
+                        
+                            <br>
+                        </div>
+                        
+                        <p class="name">Rio Bintang Adi Putra</p>
+                        <p class="study">Mahasiswa | UPN "Veteran" Yogyakarta</p>
+                    </div>  
+                    <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+                </div>
+                <div>
+                    
+                </div>
+                
+            </article>
+            <!--End Home-->
+            <!--About Me-->
+            <h1 id="aboutme"> About Me </h1> 
+            <content id="about">
+                <div class="flex-container-justify-content">
+                    <article class="aboutme-margin">
+                        <div class="perkenalan">
+                            <h2 style="text-align: center;"> Hi!</h2>
+                            <p class="perkenalan-teks">
+                                My name is Rio Bintang Adi Putra or commonly called Bintang. I am from Yogyakarta. I am a student at 
+                                the Universitas Pembangunan Nasional "Veteran" Yogyakarta. I am interested in learning about Web Development.
+                                <br><br>
+                                If you want to get to know me more, you can contact me via the contacts provided on this page. <br> Thank you!
+                            </p>
+                        </div>
+                    </article>
+                    <div class="aboutme-margin">
+                        <img class="photo" src="image/rio bintang.jpg"> 
+                    </div>     
+                </div>
+            </content>
+            <!--End About Me-->
+            <!--Hobby-->
+            <content id="myhobbies">
+                <h1 class="hobi">My Hobbies</h1>
+                <article class="flex-container-justify-content">
+                    <div>
+                        <div class="slideshow-container">
+                            <div class="mySlides fade photo-sports" style="display: block;">
+                                <img class="photo" style="margin-right: 12px" src="image/basket.png">
+                            </div>
+                            <div class="mySlides fade photo-sports">
+                                <img class="photo" style="margin-right: 12px;" src="image/tenis meja.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 style="margin-right: 70px;">Sports <hr></h2>
+                    </div>
+                </article>
+
+                <article class="flex-container-justify-content">
+                    <div>
+                        <h2 style="margin-left: 70px;">Playing Games <hr></h2>
+                    </div>
+                    <div>
+                        <div class="slideshow-container">
+                            <div class="mySlides fade photo-games" style="display: block;">
+                                <img class="photo" style="margin-left: 12px" src="image/apex legends.jpg">
+                            </div>
+                            <div class="mySlides fade photo-games">
+                                <img class="photo" style="margin-left: 12px;" src="image/mobile legends.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </content>
+            <!--End Hobby-->
+            <!-- Contact -->
+            <content id="contact">
+                <div class="mycontact flex-container-column">
+                        <h1>Contact Me</h1>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/roxasdavega/" class="btn-contact" target="_blank"><i class="uil uil-facebook-f"></i> Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/_riobintang" class="btn-contact" style="text-decoration:none;" target="_blank"><i class="uil uil-instagram"></i> Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/RoxasDavega" class="btn-contact" style="text-decoration:none;" target="_blank"><i class="uil uil-github"></i> Github</a>
+                        </li>
+                    </ul>
+                </div>
+            </content>   
+            <!-- End Contact -->
+        </main>
+        <footer>
+            <h3>There's no way to know if the path you choose was right.</h3>
+            <p class="footer-copyright">Copyright &copy; 2022 | Designed By Rio Bintang Adi Putra</p>
+        </footer>
+        <script>
+            myFunction();
+        </script>
+    </body>
+    
+   
+</html>

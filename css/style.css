@@ -1,0 +1,317 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f7f7;
+}
+.flex-container{
+    display:flex;
+}
+.flex-container-spacebetween{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.flex-container-content-center{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.flex-container-justify-content{
+    width: 100%;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-container-justify-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-container-column{
+    display:flex;
+    flex-direction: column;
+}
+.flex-container-row{
+    display: flex;
+    flex-direction: row;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float:right;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    background-color: #1c1c1b !important;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    display: flex;
+    float:right;
+}
+nav .btn-navbar{
+    cursor: pointer;
+    text-decoration: none;
+    color:#7c7a7a;
+    font-size: 17px;
+    padding: 15px;
+    display: block;
+}
+nav a:hover{
+    color:#CACACA;
+}
+nav #nametitle{
+    color:#ffffff;
+    float:left;
+    font-size: 20px;
+}
+/*Profile*/
+.bg-top{
+    background: url("../image/background.jpg"); /*background foto*/
+    background-size: cover;
+    background-position: center;
+    min-height: 750px;
+    max-height: 1100px;
+    position: relative;
+}
+.bg-inside{
+    border: 3px solid #6D6D6D;
+    width: 450px;
+    height: 430px;
+    padding: 63px;
+    background-color: rgba(0,0,0, 0.7); /*Memberikan efek blur*/
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: normal;
+}
+.bg-profile {
+    width: 150px;
+    height: 150px;
+    vertical-align: middle;
+    border: 3px solid #6D6D6D;
+    border-radius: 50%;  
+    margin-bottom: 20px;
+}
+.name{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: azure;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+}
+.study{
+    color: azure;
+    font-family: 'Montserrat', sans-serif;
+    font-size:15px;
+}
+.banner{
+    margin-top: 0px;
+}
+.banner-img {
+    border-style:solid;border-image: linear-gradient(white,transparent) 1;border-bottom:0; /*Efek pada garis*/
+    width: 450px;
+    height: 430px;
+    padding: 63px;
+    margin: 0 auto;
+    text-align: center;
+}
+.image {
+    width: 133px;
+    height: 133px;
+    margin-top: 10px;
+    border-radius: 50%;
+    vertical-align: middle;  
+}
+/*About*/
+#about{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0px;
+    height: 600px;
+}
+.aboutme-margin{
+    margin: 0px 60px;
+}
+#aboutme{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 3px;
+  
+}
+.perkenalan{
+    margin: 80px auto 50px auto;
+    text-align:left;
+    width: 450px;
+    height: 430px;
+    padding-top: 50px;
+}
+.perkenalan-teks{
+    padding-left: 0px;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+/*Hobby*/
+#myhobbies{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin:auto;
+    padding-top: 50px;
+}
+.hobby-margin{
+    margin: 0px 60px;
+}
+.photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:10%;
+    border: 3px solid rgb(46, 44, 44);
+    top:52%;
+    left:50%;
+    width: 300px;
+    height: 300px;
+}
+.hobi{
+    text-align: center; /*agar teks di tengah */
+    margin-bottom: 50px;
+}
+/*Contact*/
+#contact{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    margin: 50px auto;
+}
+.mycontact{
+    text-align: center;
+}
+.mycontact ul{
+    list-style-type: none;
+    margin-right: 23px;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.mycontact .btn-contact{
+    text-decoration: none;
+    font-size: 14px;
+    padding: 4px 10px;
+    display: block;
+    text-align: center;
+    border:1px solid gray;
+    border-radius: 7%;
+    color: #1C1C1C;
+}
+.mycontact .btn-contact:hover{
+    background-color: #1C1C1C;
+    color: white;
+}
+.mycontact i{
+    font-size: 14pt;
+}
+/*SlideShow*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  z-index: -1;
+}
+
+/* Hide image*/
+.mySlides {
+  display: none;
+}
+/* Next & prev buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0; /*Agar tombol next berada di sebelah kanan*/
+  margin-right: 30px;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+    margin-left: 30px;
+}
+
+.prev:hover, .next:hover{
+  background-color: #6D6D6D;
+}
+/* animasi */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.0s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+footer{
+    background-color: #1c1c1b;
+    color: white;
+    margin-top: 100px;
+    padding: 30px 0 5px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .footer-copyright{
+    color:#7c7a7a;
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
